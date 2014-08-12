@@ -30,8 +30,8 @@ Install Packages
 
 Usage:
   1. First start node server using 
-    sudo nasl start
-    sudo nasl stop
+  ..*sudo nasl start
+  ..*sudo nasl stop
   2. Then access to rails
   log = GLO::LOG::Logger.new('appname')
   log.level = GLO::LOG::Logger::DEBUG
