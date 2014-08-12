@@ -4,11 +4,11 @@ glo-logging-server-client
 ###Install
 ---
 1.Node
-..*brew install node
+*brew install node
 2.Cassandra
-..*brew install cassandra
+*brew install cassandra
 3.Redis
-..*brew install redis
+*brew install redis
 
 Setup Cassandra keyspace
   Access through cqlsh
