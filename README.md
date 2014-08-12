@@ -47,7 +47,7 @@ CREATE TABLE log (
 ##### Note: Check if nasl is running and cassandra
   
 #### To Check for logs:
-  ##### Access through cqlsh
+##### Access through cqlsh
 ```
 1. use node_server
 2. select * from log;
