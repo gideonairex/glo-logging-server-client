@@ -10,11 +10,13 @@ glo-logging-server-client
 3. Redis
  *  brew install redis
 
-Setup Cassandra keyspace
-  Access through cqlsh
-  1. CREATE KEYSPACE node_server WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
-  # WITH is your choice except for the "node_server" keyspace it is needed in the node-async-logger-server
-  2. CREATE TABLE log (
+####Setup Cassandra keyspace
+Access through cqlsh
+1. CREATE KEYSPACE node_server WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+WITH is your choice except for the "node_server" keyspace it is needed in the node-async-logger-server
+2. Create the table
+```
+CREATE TABLE log (
       log_id uuid,
       app text,
       log_level text,
@@ -22,6 +24,7 @@ Setup Cassandra keyspace
       tag text,
       PRIMARY KEY ((log_id))
     )
+```
     
 Install Packages 
   npm install -g node-async-logger-server
