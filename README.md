@@ -1,7 +1,6 @@
 ####Install Packages 
-1. npm install -g node-async-logger-server
+1. npm install nasl -g
 2. gem install glo-logging-server-client
-  
 
 ####Usage:
 1. First start node server using 
