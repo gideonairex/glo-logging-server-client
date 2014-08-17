@@ -1,6 +1,7 @@
 require 'timeout'
 require 'redis'
 require 'json'
+require 'socket'
 
 module GLO
 		module LOG

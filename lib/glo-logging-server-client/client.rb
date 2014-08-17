@@ -1,11 +1,10 @@
 module GLO::LOG
 	class Client
-		def initialize ( app )
-			@conn = GLO::LOG::Conn.new( app )
+		def initialize ( target, app )
+			@conn = GLO::LOG::Conn.new( target, app )
 		end
 		def log ( log_level, msg, tag )
-			ts = Time.now
-			@conn.log( log_level, msg, tag, ts )
+			@conn.log( log_level, msg, tag)
 		end
 	end
 end

@@ -6,8 +6,8 @@ module GLO::LOG
 
     attr_accessor :level
 
-    def initialize(app = 'default')
-      super(app)
+    def initialize(target = '127.0.0.1:1000', app = 'default')
+      super( target, app )
       @level = INFO
     end
 
