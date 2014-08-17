@@ -8,7 +8,7 @@
  * sudo nasl stop
 2. Then access to rails
 ```
-  log = GLO::LOG::Logger.new('appname')
+  log = GLO::LOG::Logger.new('127.0.0.1:1000', 'appname')
   log.level = GLO::LOG::Logger::DEBUG
   log.info( 'hello world' )
 ```
